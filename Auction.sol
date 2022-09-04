@@ -41,7 +41,7 @@ beneficiary=msg.sender;
         //Part 1 Task 2. Initialize two items with at index 1 and 2. 
         // ** Start code here. 2 lines approximately. **/
         items[1] = Item({itemId:1,itemTokens:emptyArray});
-        items[2] =I tem({itemId:2,itemTokens:emptyArray});
+        items[2] =Item({itemId:2,itemTokens:emptyArray});
         //** End code here**/
     }
     
@@ -110,7 +110,8 @@ beneficiary=msg.sender;
     //Hint : Use require to validate if "msg.sender" is equal to the "beneficiary".
     modifier onlyOwner {
         // ** Start code here. 2 lines approximately. **
-        
+    
+        _;
 
         //** End code here. **
     }
