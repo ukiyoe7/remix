@@ -111,8 +111,7 @@ beneficiary=msg.sender;
     modifier onlyOwner {
         // ** Start code here. 2 lines approximately. **
         
-require(beneficiary == msg.sender);
-        _;
+
         //** End code here. **
     }
     
