@@ -110,7 +110,7 @@ beneficiary=msg.sender;
     //Hint : Use require to validate if "msg.sender" is equal to the "beneficiary".
     modifier onlyOwner {
         // ** Start code here. 2 lines approximately. **
-    
+    require(beneficiary == msg.sender);
         _;
 
         //** End code here. **
